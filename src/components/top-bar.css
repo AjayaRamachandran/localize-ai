@@ -1,0 +1,28 @@
+.top-bar {
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px;
+}
+.top-bar-chat-title {
+    font-size: 0.9rem;
+    letter-spacing: -0.1px;
+}
+.localize-title {
+    color: #111;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-left: 6px;
+    letter-spacing: -0.2px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.slogan {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    opacity: 0.35;
+}

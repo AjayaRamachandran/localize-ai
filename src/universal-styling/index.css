@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Subtle scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+/* Hide scrollbar when not scrolling but keep functionality */
+::-webkit-scrollbar-thumb {
+  transition: background-color 0.3s;
+}
+
+/* Specific styling for entry box scrollbar */
+.entry-input::-webkit-scrollbar {
+  width: 6px;
+}
+
+.entry-input::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+html, body, #root {
+  min-height: 0;
+  min-width: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 0;
+  min-width: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+
+  color: #1c1c1c;
+  background: #ffffff;
+  /*background: linear-gradient(90deg, #151515 0%, #1c1c1c 15%, #1c1c1c 85%, #151515 100%);*/
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+[text-style="display"] {
+  font-family: 'Geist', sans-serif;
+}
+
+[color-type="accent-color"] {
+  color: #c56ec9;
+}
+
+[color-type="icon-color"] {
+  color: #ffffff;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  box-sizing: border-box;
+  min-height: 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  align-items: center;
+  /* outline: 1px solid white; */
+}
+
+::selection {
+  background: #77777722 !important;
+  color: auto;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  background-color: inherit;
+  color: inherit;
+  border: 0px solid transparent;
+  font-size: 1em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: filter 0.4s;
+}
+button:hover {
+  filter: brightness(1.2);
+}
+button:focus {
+  outline: none;
+}
+span {
+  margin: 0;
+}
+input {
+  margin: 0;
+}
+hr {
+  border: none;
+  border-top: 3px solid #ffffff1e;
+  border-radius: 999px;
+  width: 1000px;
+  max-width: 80%;
+  box-sizing: border-box;
+  align-self: center;
+}
+.hr {
+  width: 4px;
+  display: block;
+  background: #3c3c3c;
+  margin: 4px 8px;
+  border-radius: 999px;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 18px;
+}
+.scrollable::-webkit-scrollbar-track {
+  background: #2a2a2a;
+}
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #ffffff22;
+  border-radius: 10px !important;
+  border: 5px solid #2a2a2a; /* match background to create spacing */
+  }
+
+.scrollable.light-bg::-webkit-scrollbar-thumb {
+  border: 5px solid #2a2a2a; /* match background to create spacing */
+  }
+
+.scrollable.dark-bg::-webkit-scrollbar-thumb {
+  border: 5px solid #222222;
+  }

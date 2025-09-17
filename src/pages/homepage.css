@@ -1,0 +1,45 @@
+.homepage-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Left panel transitions */
+.homepage-layout > *:first-child {
+  width: 300px; /* match the width from left-panel.css */
+  flex-shrink: 0;
+  border-right: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+/* Add margin transition to chat area */
+.chat-area {
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+}
+
+/* When panel is closed, adjust chat area margin */
+.homepage-layout:has(.left-panel.closed) .chat-area {
+  margin-left: -246px; /* 300px - 40px (the visible button part) */
+}
+
+/* Chat area takes the rest */
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+/* Ensure CurrentChat grows and EntryBox stays at bottom */
+.chat-area > .current-chat-container {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-area > .entry-box {
+  border-top: 1px solid #e5e7eb;
+}

@@ -1,0 +1,49 @@
+.entry-box {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  padding: 10px;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.entry-input {
+  flex: 1;
+  resize: none;
+  border: 1px solid #d1d5db;
+  border-radius: 24px;
+  font-family: 'Inter', sans-serif;
+  padding: 0.8rem 0.8rem 0.8rem 1.2rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1.5;
+  height: 50px;
+  overflow-y: hidden !important;
+  outline: 2px solid #0000;
+  outline-offset: -1px;
+  transition: height 0.2s, outline 0.3s, border-radius 0.3s;
+}
+
+.entry-input.expanded {
+  height: 200px;
+  overflow-y: scroll !important;
+  border-radius: 10px;
+}
+.entry-input:focus {
+  outline: 2px solid black;
+}
+
+.send-button {
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  width: 55px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
