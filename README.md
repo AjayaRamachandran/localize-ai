@@ -21,13 +21,13 @@ Modern AI models are inefficient, costly, and centralized. As technology innovat
 
 ### The Solution
 
-What we need is an AI revolution: a distributed network of effieient systems -- free, and private. LocalizeAI is the first step in that process.
+What we need is an AI revolution: a distributed network of efficient systems -- free, and private. LocalizeAI is the first step in that process.
 
 This repository is currently just a way of hosting open-source llama.cpp models on-hardware, exposing said model via `localhost`, and interacting with that model in a React-based interface. This is already a powerful proof-of-concept, allowing private, free (albeit slow) AI access, without an internet connection. But I have bigger plans.
 
 ### The Roadmap
 
-**Home AI Servers** || A potential future for localized AI is the idea of a Home AI server: a single "AI router" in a household with the compute power of a gaming PC that handles the requests of all devices, from the smartphone to the smart TV, in that household. This AI server would be able to run a solid-sized model like OpenAI's gpt-oss-20b, enabling flagship-level intelligence for free. The benefit of a single shared server is that household context can be shared, allowing for the model to act as a sort of "AI Butler" that knows each member personally.
+**Home AI Servers** || A potential future for localized AI is the idea of a Home AI server: a single "AI router" in a household with the compute power of a gaming PC that handles the requests of all devices, from the smartphone to the smart TV, in that household. This AI server would be able to run a solid-sized model like OpenAI's `gpt-oss-20b`, enabling flagship-level intelligence for free. The benefit of a single shared server is that household context can be shared, allowing for the model to act as a sort of "AI Butler" that knows each member personally.
 
 **Crowdsourced AI Networks** || One level above that is the idea of an AI network, in which individuals donate compute to the community in exchange for credits that make their own requests higher on the queue. To make the system self-propagating, users need to be incentivized to contribute to the network (rather than just use their compute for themselves) so perhaps a monetization scheme could be implemented.
 
